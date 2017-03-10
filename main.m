@@ -1,8 +1,18 @@
 function main
+% execute heading tracking
+% *************************************************************************
+% Description: Turn the laptop/camera e.g. horizontally and observe how the
+% heading is estimated.
+%
+% *************************************************************************
 
 % load calibration data
 % ---------------------
-load lambda
+try
+    load lambda
+catch
+    error('Execute calibration!');
+end
 
 % connect to the webcam
 % ---------------------
@@ -36,6 +46,8 @@ while 1
     % ---------------------
     cumul_angle = lambda * cumul_shift;
     
+    % log for plotting
+    % ---------------------    
     cumul_angle_arr(end+1) = cumul_angle;
     
     % display and plot angle

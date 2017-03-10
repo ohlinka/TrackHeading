@@ -9,15 +9,6 @@ function array = convert_image_to_array(image_rgb, varargin)
 %
 % References:
 % [1]  Milford, Wyeth - Single Camera Vision-Only SLAM on a Suburban Road Network
-%
-% INPUT:
-% ------
-% image_rgb ...
-%
-% OUTPUT:
-% -------
-% array ...
-%
 % *************************************************************************
 
 if nargin > 1

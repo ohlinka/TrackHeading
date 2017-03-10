@@ -1,10 +1,14 @@
 function par = get_parameters()
+% get and set parameters
+% *************************************************************************
+% Description: Modify the parameters to change the desired behavior.
+%
+% *************************************************************************
 
 % calibration
 % ---------------------
 par.calib_angle = 90; % [deg]
 par.calib_time  = 10; % [s]
-
 
 % conversion of color rgb image to intensity array
 % ---------------------

@@ -1,7 +1,10 @@
 function calibrate
 % calibrate the camera for tracking its heading
 % *************************************************************************
-% Description: 
+% Description: The user must turn the camera by the specified angle. From
+% the computed accumulated shift and the turn angle we compute a conversion
+% factor. This factor is then used to convert shift to angle when running
+% the main program.
 %
 % *************************************************************************
 
@@ -55,6 +58,8 @@ end
 calib_angle
 cumul_shift
 
+% compute and save the conversion factor
+% ---------------------
 lambda = calib_angle / cumul_shift
 
 save lambda lambda

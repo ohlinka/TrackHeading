@@ -2,16 +2,10 @@ function min_shift = compute_shift(img_array_1, img_array_2, varargin)
 % compute relative shift that leads to min intensity difference between the
 % two input image intesity arrays
 % *************************************************************************
-% Description: TODO
-% The comparison between images is performed by calculating
-% the average absolute intensity difference between the two
-% image arrays, f(s), as they are shifted relative to each other
-%
-%
+% Description: See equations (4) and (5) in reference [1].
 %
 % References:
 % [1]  Milford, Wyeth - Single Camera Vision-Only SLAM on a Suburban Road Network
-%
 % *************************************************************************
 
 if nargin > 2
